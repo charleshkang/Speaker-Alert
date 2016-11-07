@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo gem update gh_inspector
+sudo chmod -R go+r /Users/travis/.rvm/gems/gh_inspector-1.0.0/lib
 git status
 
 # If a pull request, only ever test
