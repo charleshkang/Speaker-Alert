@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo chmod -R go+r /Users/travis/.rvm/gems/gh_inspector-1.0.0/lib
+sudo chmod -R go+r  /Users/travis/build/theothertomelliott/Speaker-Alert/vendor/bundle/ruby/2.0.0/gems/gh_inspector-1.0.0/lib
 git status
 
 # If a pull request, only ever test
