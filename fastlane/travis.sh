@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#sudo gem update gh_inspector
+sudo gem update gh_inspector
 git status
 
 # If a pull request, only ever test
