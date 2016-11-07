@@ -2,3 +2,5 @@ language: objective-c
 osx_image: xcode8
 script:
         - ./fastlane/travis.sh
+before_install:
+  - gem install bundler
