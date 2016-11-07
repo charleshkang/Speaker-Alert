@@ -151,6 +151,10 @@ platform :ios do
     gym(scheme: "SpeakerAlert", toolchain: :swift_2_3) # Build your app - more options available
     deliver(force: true)
   end
+
+  desc "No-op lane for testing"
+  lane :noop do
+  end
 end
 
 

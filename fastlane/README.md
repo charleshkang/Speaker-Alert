@@ -68,6 +68,11 @@ Deploy a new version to the App Store without screenshots
 fastlane ios deploy
 ```
 Deploy a new version to the App Store
+### ios noop
+```
+fastlane ios noop
+```
+No-op lane for testing
 
 ----
 

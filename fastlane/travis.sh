@@ -1,10 +1,17 @@
 #!/bin/sh
 
+#sudo gem update gh_inspector
 git status
 
 # If a pull request, only ever test
 if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
   bundle exec fastlane test
+  exit $?
+fi
+
+# No-op
+if [[ "$TRAVIS_BRANCH" == "noop" ]] || [[ "$TRAVIS_BRANCH" = */noop ]]; then
+  bundle exec fastlane noop
   exit $?
 fi
 
