@@ -4,3 +4,5 @@ script:
         - ./fastlane/travis.sh
 before_install:
   - gem install bundler
+rvm:
+  - 2.2
